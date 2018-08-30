@@ -177,6 +177,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="mHf-eV-SCL" eventType="touchUpInside" id="4cX-HV-fwX"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-vZ-iAq">
                                 <rect key="frame" x="0.0" y="55" width="375" height="110"/>
@@ -226,6 +229,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZyU-XD-bsH"/>
                     </view>
+                    <connections>
+                        <segue destination="yrW-xX-2OE" kind="show" identifier="skillVCSegue" id="LQe-Lk-ZYv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OM0-Z6-cu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="MrK-NP-5y6" userLabel="Exit" sceneMemberID="exit"/>
