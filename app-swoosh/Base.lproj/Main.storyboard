@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="gaC-cW-7TI">
             <objects>
-                <viewController id="mHf-eV-SCL" sceneMemberID="viewController">
+                <viewController id="mHf-eV-SCL" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Ld-Kp-cWP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-vZ-iAq">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-vZ-iAq">
                                 <rect key="frame" x="0.0" y="55" width="375" height="110"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="33r-I0-pvp">
@@ -204,15 +204,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zXD-D1-CBs" firstAttribute="top" secondItem="ZyU-XD-bsH" secondAttribute="top" constant="5" id="1bK-R9-CCk"/>
                             <constraint firstItem="yQ1-rp-wzd" firstAttribute="trailing" secondItem="ZyU-XD-bsH" secondAttribute="trailing" id="5nm-cv-xRK"/>
-                            <constraint firstItem="T7q-vZ-iAq" firstAttribute="top" secondItem="ZyU-XD-bsH" secondAttribute="top" constant="20" id="87r-GJ-3Ki"/>
+                            <constraint firstItem="T7q-vZ-iAq" firstAttribute="top" secondItem="ZyU-XD-bsH" secondAttribute="top" constant="35" id="87r-GJ-3Ki"/>
                             <constraint firstItem="fM2-Fl-37Q" firstAttribute="centerX" secondItem="4Ld-Kp-cWP" secondAttribute="centerX" id="Go6-Rc-Vph"/>
                             <constraint firstItem="T7q-vZ-iAq" firstAttribute="centerX" secondItem="4Ld-Kp-cWP" secondAttribute="centerX" id="Isp-gR-uY4"/>
                             <constraint firstItem="T7q-vZ-iAq" firstAttribute="leading" secondItem="ZyU-XD-bsH" secondAttribute="leading" id="XIN-dh-Pgu"/>
                             <constraint firstItem="ZyU-XD-bsH" firstAttribute="trailing" secondItem="j9Y-Fq-dEc" secondAttribute="trailing" id="Ypr-VS-PJ4"/>
                             <constraint firstItem="yQ1-rp-wzd" firstAttribute="bottom" secondItem="ZyU-XD-bsH" secondAttribute="bottom" id="ZIQ-XW-BKD"/>
-                            <constraint firstItem="j9Y-Fq-dEc" firstAttribute="top" secondItem="T7q-vZ-iAq" secondAttribute="bottom" constant="50" id="ZqM-RP-lRQ"/>
+                            <constraint firstItem="j9Y-Fq-dEc" firstAttribute="top" secondItem="T7q-vZ-iAq" secondAttribute="bottom" constant="35" id="ZqM-RP-lRQ"/>
                             <constraint firstItem="ZyU-XD-bsH" firstAttribute="bottom" secondItem="fM2-Fl-37Q" secondAttribute="bottom" constant="20" id="axk-bk-5Jx"/>
                             <constraint firstItem="ZyU-XD-bsH" firstAttribute="trailing" secondItem="T7q-vZ-iAq" secondAttribute="trailing" id="bQE-Wm-kTr"/>
                             <constraint firstItem="zXD-D1-CBs" firstAttribute="top" secondItem="ZyU-XD-bsH" secondAttribute="top" constant="10" id="dQF-dQ-trl"/>
@@ -233,10 +232,10 @@
             </objects>
             <point key="canvasLocation" x="832.79999999999995" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="7M1-tC-Kq7">
             <objects>
-                <viewController id="yrW-xX-2OE" sceneMemberID="viewController">
+                <viewController id="yrW-xX-2OE" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fl0-z4-M1D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
