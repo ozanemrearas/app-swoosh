@@ -26,24 +26,24 @@
                                 <rect key="frame" x="128" y="40" width="119" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHX-MC-1kj">
-                                <rect key="frame" x="48" y="138" width="279" height="76.5"/>
+                                <rect key="frame" x="7" y="138" width="361.5" height="76.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="279" id="ZwH-im-fdK"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="ZwH-im-fdK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="56"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnp-kI-oxr">
-                                <rect key="frame" x="48" y="219.5" width="279" height="39"/>
+                                <rect key="frame" x="7" y="219.5" width="361.5" height="39"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozM-ig-Lta">
-                                <rect key="frame" x="48" y="268" width="279" height="50"/>
+                                <rect key="frame" x="7" y="268" width="361.5" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="279" id="hHC-QA-X8Z"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="hHC-QA-X8Z"/>
                                     <constraint firstAttribute="height" constant="50" id="u1U-K8-FsO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
@@ -68,7 +68,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zHX-MC-1kj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1cg-eL-eY7"/>
-                            <constraint firstItem="ozM-ig-Lta" firstAttribute="top" secondItem="nnp-kI-oxr" secondAttribute="bottom" constant="9.5" id="4E2-Y0-3Fu"/>
                             <constraint firstItem="nnp-kI-oxr" firstAttribute="width" secondItem="zHX-MC-1kj" secondAttribute="width" id="4Ko-nV-11B"/>
                             <constraint firstItem="ozM-ig-Lta" firstAttribute="width" secondItem="nnp-kI-oxr" secondAttribute="width" id="4oe-Z2-bde"/>
                             <constraint firstItem="zHX-MC-1kj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="597-g0-p44"/>
@@ -141,6 +140,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="mHf-eV-SCL" eventType="touchUpInside" id="pvm-49-Ddh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m83-o6-MmL" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="375" height="50"/>
@@ -152,6 +154,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="mHf-eV-SCL" eventType="touchUpInside" id="9Hz-Ma-xx7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYU-D1-j0y" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="375" height="50"/>
@@ -163,14 +168,17 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="mHf-eV-SCL" eventType="touchUpInside" id="Fm5-zM-kDk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM2-Fl-37Q" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM2-Fl-37Q" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="597" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="6g1-va-CFU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="41O-GI-ifg"/>
                                     <constraint firstAttribute="height" constant="50" id="SWi-4n-LEt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
@@ -196,7 +204,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="0KP-QK-DUw"/>
                                             <constraint firstAttribute="height" constant="50" id="CPL-ls-ef0"/>
-                                            <constraint firstAttribute="width" constant="279" id="bXL-kD-dCf"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="bXL-kD-dCf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -211,25 +219,27 @@
                             <constraint firstItem="T7q-vZ-iAq" firstAttribute="top" secondItem="ZyU-XD-bsH" secondAttribute="top" constant="35" id="87r-GJ-3Ki"/>
                             <constraint firstItem="fM2-Fl-37Q" firstAttribute="centerX" secondItem="4Ld-Kp-cWP" secondAttribute="centerX" id="Go6-Rc-Vph"/>
                             <constraint firstItem="T7q-vZ-iAq" firstAttribute="centerX" secondItem="4Ld-Kp-cWP" secondAttribute="centerX" id="Isp-gR-uY4"/>
+                            <constraint firstItem="fM2-Fl-37Q" firstAttribute="leading" secondItem="ZyU-XD-bsH" secondAttribute="leading" id="UfA-Eu-C5F"/>
                             <constraint firstItem="T7q-vZ-iAq" firstAttribute="leading" secondItem="ZyU-XD-bsH" secondAttribute="leading" id="XIN-dh-Pgu"/>
                             <constraint firstItem="ZyU-XD-bsH" firstAttribute="trailing" secondItem="j9Y-Fq-dEc" secondAttribute="trailing" id="Ypr-VS-PJ4"/>
                             <constraint firstItem="yQ1-rp-wzd" firstAttribute="bottom" secondItem="ZyU-XD-bsH" secondAttribute="bottom" id="ZIQ-XW-BKD"/>
                             <constraint firstItem="j9Y-Fq-dEc" firstAttribute="top" secondItem="T7q-vZ-iAq" secondAttribute="bottom" constant="35" id="ZqM-RP-lRQ"/>
                             <constraint firstItem="ZyU-XD-bsH" firstAttribute="bottom" secondItem="fM2-Fl-37Q" secondAttribute="bottom" constant="20" id="axk-bk-5Jx"/>
                             <constraint firstItem="ZyU-XD-bsH" firstAttribute="trailing" secondItem="T7q-vZ-iAq" secondAttribute="trailing" id="bQE-Wm-kTr"/>
+                            <constraint firstItem="ZyU-XD-bsH" firstAttribute="trailing" secondItem="fM2-Fl-37Q" secondAttribute="trailing" id="dJX-H4-FVa"/>
                             <constraint firstItem="zXD-D1-CBs" firstAttribute="top" secondItem="ZyU-XD-bsH" secondAttribute="top" constant="10" id="dQF-dQ-trl"/>
                             <constraint firstItem="j9Y-Fq-dEc" firstAttribute="centerX" secondItem="4Ld-Kp-cWP" secondAttribute="centerX" id="dvm-eV-7Zx"/>
-                            <constraint firstItem="ZyU-XD-bsH" firstAttribute="trailing" secondItem="fM2-Fl-37Q" secondAttribute="trailing" id="jPp-38-4LD"/>
                             <constraint firstItem="zXD-D1-CBs" firstAttribute="leading" secondItem="ZyU-XD-bsH" secondAttribute="leading" id="jPs-9a-sj8"/>
+                            <constraint firstItem="ZyU-XD-bsH" firstAttribute="bottom" secondItem="fM2-Fl-37Q" secondAttribute="bottom" constant="20" id="kle-Mu-5nu"/>
                             <constraint firstItem="yQ1-rp-wzd" firstAttribute="top" secondItem="4Ld-Kp-cWP" secondAttribute="top" id="pry-Eu-a27"/>
                             <constraint firstItem="zXD-D1-CBs" firstAttribute="leading" secondItem="ZyU-XD-bsH" secondAttribute="leading" id="rsv-2F-Kyd"/>
                             <constraint firstItem="j9Y-Fq-dEc" firstAttribute="leading" secondItem="ZyU-XD-bsH" secondAttribute="leading" id="sDI-W8-sdE"/>
-                            <constraint firstItem="fM2-Fl-37Q" firstAttribute="leading" secondItem="ZyU-XD-bsH" secondAttribute="leading" id="thG-Gm-AYM"/>
                             <constraint firstItem="yQ1-rp-wzd" firstAttribute="leading" secondItem="ZyU-XD-bsH" secondAttribute="leading" id="zrd-CA-aDM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZyU-XD-bsH"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="fM2-Fl-37Q" id="Txh-iH-pZ9"/>
                         <segue destination="yrW-xX-2OE" kind="show" identifier="skillVCSegue" id="LQe-Lk-ZYv"/>
                     </connections>
                 </viewController>
@@ -262,7 +272,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf0-ML-jKp">
                                         <rect key="frame" x="48" y="60" width="279" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="279" id="1y4-PU-rWq"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="1y4-PU-rWq"/>
                                             <constraint firstAttribute="height" constant="50" id="Uvg-0c-6fq"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Ybb-yq-an7"/>
                                         </constraints>
